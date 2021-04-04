@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
-//Name: lanceur2.ma
-//Last modified: Sun, Apr 04, 2021 11:28:06 PM
+//Name: lanceur2_V2.ma
+//Last modified: Sun, Apr 04, 2021 11:29:24 PM
 //Codeset: 1252
 requires maya "2020";
 requires -nodeType "polyDisc" "modelingToolkit" "0.0.0.0";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19042)\n";
-fileInfo "UUID" "578E0146-4BDA-C4AD-5A4C-5A836F687C6B";
+fileInfo "UUID" "AC233187-4E5D-09DE-C86B-9C9DFD67561D";
 createNode transform -s -n "persp";
 	rename -uid "D0E153C8-4F7C-4DCF-435A-A2BBCAA72960";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -3.8770596507348474 9.5774261615857998 10.89614127525833 ;
+	setAttr ".t" -type "double3" -1.9654552087435986 6.2851287060836709 6.3926834280765892 ;
 	setAttr ".r" -type "double3" -33.938352729698082 -23.000000000011603 -8.6380714602829602e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3887E532-44FE-5864-9C39-6192D30B8D8B";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 14.018397764097889;
+	setAttr ".coi" 8.1213996583249823;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1591,4 +1591,4 @@ connectAttr "pCubeShape1.wm" "polyBevel4.mp";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pDiscShape1.iog" ":initialShadingGroup.dsm" -na;
-// End of lanceur2.ma
+// End of lanceur2_V2.ma
